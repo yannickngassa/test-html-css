@@ -77,6 +77,10 @@ select {
     width: auto;
 }
 
+.button.button--big {
+    padding: 0.75rem 2rem;
+}
+
 .button--primary {
     background-color: #16165f;
     color: #fff;
@@ -192,6 +196,10 @@ select {
     responsive
 ==========*/
 @media(max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+
     .header__actions-username {
         display: none;
     }
