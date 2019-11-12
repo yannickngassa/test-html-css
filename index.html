@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User registration</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header container-fluid">
+            <h2 class="header__title">Регистрация пользователя</h2>
+            <div class="header__actions">
+                <i class="icon icon--user"></i>
+                <div class="header__actions-username">Константинови <br />Василий Юрьевич</div>
+                <i class="icon icon--logout"></i>
+            </div>
+        </header>
+
+        <main id="main" class="main">
+            <div class="container section section--registration" id="containerBlock">
+                <form action="#" class="form-registration">
+                    <div class="form-registration__block">
+                        <h3 class="form-registration__block-title">01. Данные МО</h3>
+
+                        <div class="form-group">
+                            <label for="registrationDistrict">Округ</label>
+                            <select name="district" id="registrationDistrict" class="select js-choosen-select">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registrationName">Названия МО</label>
+                            <select name="name" id="registrationName" class="select js-choosen-select">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-registration__block">
+                        <h3 class="form-registration__block-title">02. Отвественный</h3>
+
+                        <div class="form-group">
+                            <label for="registrationName">Имя</label>
+                            <input name="name" id="registrationName" class="input" placeholder="John Doe" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registrationEmail">Email</label>
+                            <input type="email" name="email" id="registrationEmail" class="input" placeholder=" example@domain.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registrationPhone">Телефон</label>
+                            <input name="phone" id="registrationPhone" class="input" placeholder="x xxx xxx xx xx" />
+                        </div>
+                    </div>
+
+                    <div class="form-registration__btn">
+                        <button type="submit" class="button button--primary">Регистрация</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.proto.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
